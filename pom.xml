@@ -27,6 +27,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+<!--
+	Instead of manually restarting the applicatoin, devtools aid us in 
+	automatically restarting the application when there is a change.dependency>
+	However, we need to manually restart the applicatoin when changes are made to pom.xml 
+-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
