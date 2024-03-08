@@ -12,7 +12,6 @@ public class coursesTable {
     @Autowired
     private JdbcTemplate springJdbcTemplate; 
 
-    //private static String query=""" insert into course values(2,'hibernate','auth')""";
     public void insert(Course course){
         springJdbcTemplate.update("insert into course values(?,?,?)",course.getId(),course.getName(),course.getAuthor());
     }

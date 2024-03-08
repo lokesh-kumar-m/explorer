@@ -1,8 +1,19 @@
 package com.dev.explorejpahibernate.course;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Course {
+    //Mapping the values with the column names in DB table
+    
+    //denoting primary Key
+    @Id     
     private int id;
+    //column with "name" in the DB table mapped with name valiable
     private String name;
+    //column with "author" in the DB table mapped with author valiable
+
     private String author;
 
     public Course(){
@@ -19,9 +30,11 @@ public class Course {
     public int getId() {
         return id;
     }
+    
     public void setId(int id) {
         this.id = id;
     }
+
     public String getName() {
         return name;
     }
@@ -36,6 +49,6 @@ public class Course {
     }
     @Override
     public String toString() {
-        return "The course id:"+id+", its name: "+name+" and authoror:"+author+"";
+        return "The course id:"+id+", its name: "+name+" and author:"+author+"";
     }
 }
