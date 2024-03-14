@@ -1,13 +1,13 @@
-package com.dev.explorejpahibernate;
+package com.dev.explorer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ExploreJpaHibernateApplication {
+public class ExplorerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ExploreJpaHibernateApplication.class, args);
+		SpringApplication.run(ExplorerApplication.class, args);
 	}
 
 }
