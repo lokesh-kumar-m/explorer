@@ -1,10 +1,10 @@
-package com.dev.explorejpahibernate;
+package com.dev.explorer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ExploreJpaHibernateApplicationTests {
+class ExplorerApplicationTests {
 
 	@Test
 	void contextLoads() {
